@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img [src]="image" width="40px" style="display:inline-block" height="40px"></ion-img> 
+    <ion-title class="titleicon" >Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="welcome-card">
+          <ion-card-header>
+            <ion-card-subtitle>Get Started</ion-card-subtitle>
+            <ion-card-title>Defora에 오신것을 환영합니다.</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>세상의 모든 의사결정.</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col>
+        <ion-button shape="round">
+          <ion-icon slot="start" name="apps"></ion-icon>Activity
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list lines="none">
+          <ion-list-header>
+            <ion-label>Resources</ion-label>
+          </ion-list-header>
+          <ion-item href="https://defora.io/">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>Defora Documentation</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="error">
+  Error :(
+</div>
+<div *ngIf="rates">
+  <div *ngFor="let rate of rates">
+    <p>{{rate.currency}}: {{rate.rate}}</p>
+  </div>
+</div>

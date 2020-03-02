@@ -1,0 +1,8 @@
+{
+  "appId": "com.defora.io",
+  "appName": "defora-desktop",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

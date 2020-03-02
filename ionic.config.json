@@ -1,0 +1,7 @@
+{
+  "name": "defora-web",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
