@@ -6,4 +6,5 @@
   1. npm run build --prod
   1. npx cap copy
   1. npx cap open electron
-  1. if error, base directory modify in electron/index.html ( '/' => './') 
+  1. if error, delete ./electron directory and run 'npx cap add electron' and run from 1.
+  1. if error, base directory modify in electron/app/index.html ( '/' => './') 

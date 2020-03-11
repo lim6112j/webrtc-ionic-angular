@@ -40,7 +40,21 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
+  <ion-button id="startButton" (click)="start()">Start</ion-button>
+  <ion-button id="sendButton" (click)="send()">Send</ion-button>
+  <ion-button id="closeButton" disabled>Stop</ion-button>
+  <form [formGroup]="textareas">
+    <div id="sendReceive">
+      <div id="send">
+        <h2>Send</h2>
+        <textarea formControlName="dataChannelSend" #dataChannelSend placeholder="start press"></textarea>
+      </div>
+      <div id="receive">
+        <h2>Receive</h2>
+        <textarea formControlName="dataChannelReceive" [(ngModel)]="datarcv"></textarea>
+      </div>
+    </div>
+  </form>
 
 
 </ion-content>
