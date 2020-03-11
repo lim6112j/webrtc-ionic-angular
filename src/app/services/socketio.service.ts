@@ -109,7 +109,7 @@ export class SocketioService {
       // console.log(event);
 
       if (event.candidate != null) {
-        // console.log(JSON.stringify({ 'ice': event.candidate, 'uuid': this.uuid }));
+        console.log(JSON.stringify({ 'ice': event.candidate, 'uuid': this.uuid }));
         this.signalingSocketConnection.emit('message', JSON.stringify({ 'ice': event.candidate, 'uuid': this.uuid }));
       }
     };
