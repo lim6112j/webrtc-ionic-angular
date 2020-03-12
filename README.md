@@ -8,7 +8,7 @@
   1. npx cap open electron
   1. if error, delete ./electron directory and run 'npx cap add electron' and run from 1.
   1. if error, base directory modify in electron/app/index.html ( '/' => './') 
-* webrtc test
+* webrtc test ( !!!! use firefox browser)
   1. one tab , run (8100 port)
   ```
   ionic serve
@@ -20,8 +20,8 @@
   ```
   3. start button on both tabs
   4. send data each other
-* webrtc test - web to app
-  1. run web
+* webrtc test - web to app ( !!!! use firefox browser)
+  1. run web 
   ```
   ionic serve
   ```
