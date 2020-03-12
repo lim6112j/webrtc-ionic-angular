@@ -7,6 +7,8 @@ const ICE_SERVERS: RTCIceServer[] = [
   // {urls: ['stun:stun.example.com', 'stun:stun-1.example.com']}
 ];
 const PEER_CONNECTION_CONFIG: RTCConfiguration = {
+  bundlePolicy: 'max-compat',
+  rtcpMuxPolicy: 'negotiate',
   iceServers: ICE_SERVERS
 };
 @Injectable({
@@ -138,7 +140,7 @@ export class SocketioService {
     console.log('current sendChannel state =>', this.sendChannel.readyState);
     if (this.sendChannel.readyState === 'open') {
       console.log('sendchannel sending => ', str);
-      this.sendChannel.send(str);
+      this.sendChannel.send(str || 'empty string');
     } else {
       console.log('this.sendChannel not opened');
     }

@@ -1,7 +1,8 @@
 {
   "name": "defora-web",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

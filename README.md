@@ -20,3 +20,17 @@
   ```
   3. start button on both tabs
   4. send data each other
+* webrtc test - web to app
+  1. run web
+  ```
+  ionic serve
+  ```
+
+  2. run app (ios) - team auth modification needed on xcode as usual
+  ```
+  ionic cordova emulate ios
+  ```
+
+  3. start button on app
+  4. start button on web
+  5. type send text and click send on both sides

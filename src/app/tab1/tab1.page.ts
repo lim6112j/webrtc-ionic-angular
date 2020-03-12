@@ -45,7 +45,6 @@ export class Tab1Page implements OnInit, OnDestroy, AfterViewInit {
   private formBuilder: FormBuilder;
   datarcv: string;
   @ViewChild('dataChannelSend', {static: false}) dataChannelSend: ElementRef;
-  @ViewChild('dataChannelReceive', {static: false}) dataChannelReceive: ElementRef;
   constructor(
     private apollo: Apollo,
     fb: FormBuilder,
